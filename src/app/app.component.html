@@ -1,0 +1,61 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span> <img src="../assets/images/rsv.jpg" alt="Logo" width="78px" height="45px"> </span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">settings</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">login</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
+
+<h1 style="color: purple; font-family: Verdana, Geneva, Tahoma, sans-serif; size: 20px; padding-top: 30px;"> Welcome to
+  RV online shopping</h1>
+<div style="color: rosybrown">
+<button mat-button [matMenuTriggerFor]="menu" style="size: 80px;">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Mobile</button>
+  <button mat-menu-item>Home Appliences</button>
+  <button mat-menu-item>Watches</button>
+</mat-menu>
+</div>
+
+
+<mat-grid-list cols="4" >
+  <mat-grid-tile> 
+    <div>
+      <img src="../assets/images/pop.jpg" alt="wayc" >
+      
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class ="products">
+      <button mat-raised-button style="align-items: center;">BUYNOW</button>
+      <img src="../assets/images/watch4.jpg" alt="wayc">
+    
+     
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class ="products">
+      <img src="../assets/images/watch3.jpg" alt="wayc">
+      <h2 style="text-align-last: center;"> cool </h2>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class ="products">
+      <img src="../assets/images/watch2.jpg" alt="wayc">
+      <h2 style="text-align-last: center;"> cool </h2>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class ="products">
+      <img src="../assets/images/watch2.jpg" alt="wayc">
+      <h2 style="text-align-last: center;"> cool </h2>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
